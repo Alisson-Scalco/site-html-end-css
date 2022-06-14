@@ -1,0 +1,34 @@
+.menu-spacing {
+    margin-top: 70px;
+  }
+  
+  .intro-content {
+    position: relative;
+    top: -80px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    height: 100vh;
+    gap: var(--gap)
+  }
+  .intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  .intro-img img {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  @media (max-width: 1050px) {
+    .intro-content {
+      margin: 20px;
+      top:0;
+      grid-template-columns: 1fr;
+    }
+    .intro-img img {
+      max-width: 75%;
+      max-height: auto;
+      margin: 0 auto 0;
+    }
+  }
